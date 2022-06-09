@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+
+body {
+    font-family: 'Red Hat Display', 'sans-serif';
+    font-size: 16px;
+    background: url(/img/pattern-background-desktop.svg), hsl(225, 100%, 94%);;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: min(100% - 1rem, 22rem);
+    border-radius: 0.5rem;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 2px 6px 31px 0px hsl(225, 100%, 94%);
+}
+
+.content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.1rem;
+}
+
+.image_container {
+    width: 100%;
+    height: 10rem;
+}
+
+.image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content > h2 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    
+}
+
+.content p {
+    font-weight: 645;
+    color: hsl(224, 23%, 55%);
+}
+
+.annual_plan {
+    background-color:hsl(225, 100%, 98%);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.8rem;
+    gap: 1rem;
+}
+
+.annual_plan small {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.annual_plan img {
+    width: 2.5rem;
+}
+
+.annual_plan div h4 {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%)
+}
+
+.annual_plan div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}    
+
+.annual_plan a {
+    margin-left: auto;
+    font-weight: 500;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.primary {
+    padding: 0.625rem;
+    background-color:hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 2px 6px 31px 0px hsl(225, 100%, 94%);
+    transition: 0.4s background-color;
+}
+.primary:focus {
+    outline: 2px solid var(--unsaturated-blue);
+    background: hsla(245, 75%, 52%, 0.9);
+  }
+.primary:hover {
+    background: hsla(245, 70%, 52%, 0.9);
+}
+
+.secondary {
+    background-color:#fff;
+    color: hsl(224, 23%, 55%);
+}
+.secondary:hover {
+    color:hsl(223, 47%, 23%) ;
+}
+
+@media (max-width: 680px) {
+    body {
+      background: url('./images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
+      background-position: bottom;
+      background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
